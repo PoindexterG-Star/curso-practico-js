@@ -1,36 +1,24 @@
 //Codigo del cuadrado
 console.group("cuadrados");
-//const ladoCuadrado = 5;
-//console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
+
 
 function perimetroCuadrado(lado) {
   return lado * 4;
 }
  
 perimetroCuadrado();
-//console.log("El perimetro del cuadrado es: " + perimetroCuadrado + "cm");
 
-function areaCuadrado() {
-  return ladoCuadrado * ladoCuadrado;
+
+function areaCuadrado(lado) {
+  return lado * lado;
 }
-//console.log("El area del cuadrado es: " + areaCuadrado + "cm2");
+
 
 console.groupEnd();
 
-//Codigo del triangulo
+
 console.group("triangulos")
-//const ladoTriangulo1 = 6;
-//const ladoTriangulo2 = 6;
-//const baseTriangulo = 4;
-//const alturaTriangulo = 5.5;
-/*console.log("Los lados del triangulo miden: " 
-  + ladoTriangulo1 
-  + "cm, " 
-  + ladoTriangulo2 
-  + "cm, " 
-  + baseTriangulo 
-  + "cm."
-);*/
+
 
 function perimetroTriangulo(lado1, lado2, base) {
   return lado1 + lado2 + base;
@@ -78,6 +66,7 @@ console.groupEnd();
 
 // Aqui interactuamos con el HTML
 
+//Cuadrado
 function calcularPerimetroCuadrado() {
   const input = document.getElementById("inputCuadrado");
   value = input.value;
@@ -91,3 +80,30 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert(area);
 }
+
+//Circulo
+function calcularDiametroCirculo() {
+  const input = document.getElementById("inputCirculo");
+  value = input.value;
+  const diametro = diametroCirculo(value);
+  alert(diametro);
+}
+
+function calcularPerimetroCirculo() {
+  const input = document.getElementById("inputCirculo");
+  value = input.value;
+  const perimetro = perimetroCirculo(value);
+  alert(perimetro);
+}
+
+function calcularAreaCirculo() {
+  const input = document.getElementById("inputCirculo");
+  value = input.value;
+  const area = areaCirculo(value);
+  alert(area);
+}
+
+//Triangulo
+
+
+
