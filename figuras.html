@@ -25,6 +25,22 @@
     </section>
 
     <section>
+        <h2>Calcula area y perimetro de un triangulo</h2>
+        <form>
+            <label for="inputTriangulo1">Escribe cuanto mide el lado 1</label>
+            <input id="inputTriangulo1" type="number"><br>
+            <label for="inputTriangulo2">Escribe cuanto mide el lado 2</label>
+            <input id="inputTriangulo2" type="number"><br>
+            <label for="inputTrianguloBase">Escribe cuanto mide la base</label>
+            <input id="inputTrianguloBase" type="number"><br>
+            <label for="inputTrianguloAltura">Escribe la altura del triangulo</label>
+            <input id="inputTrianguloAltura" type="number"><br>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+        </form>
+    </section>
+
+    <section>
         <h2>Calcula el diametro, perimetro y area</h2>
         <form>
             <label>Escribe el radio del circulo</label>
@@ -35,6 +51,18 @@
         </form>
     </section>
 
+    <section>
+        <h2>Calcula la altura de un triangulo isosceles</h2>
+        <form>
+            <label>Escribe medida del lado 1</label>
+            <input id="inputTri1" type="number"><br>
+            <label>Escribe medida del lado 2</label>
+            <input id="inputTri2" type="number"><br>
+            <label>Escribe medida de la base</label>
+            <input id="inputTriBase" type="number"><br>
+            <button type="button" onclick="calcularTrianguloIsosceles()">Calcular altura</button>
+        </form>
+    </section>
     <script src="figuras.js"></script>
 </body>
 </html>

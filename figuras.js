@@ -21,7 +21,7 @@ console.group("triangulos")
 
 
 function perimetroTriangulo(lado1, lado2, base) {
-  return lado1 + lado2 + base;
+  return (lado1 + lado2 + base);
 } 
 
 
@@ -29,6 +29,13 @@ function areaTriangulo(base, altura) {
   return (base * altura) / 2;
 }
 
+function trianguloIsoscelesAltura(lado1, lado2, base) {
+  if (lado1 != lado2) {
+    console.log("Los lados 1 y 2 no son iguales.");
+  } else {
+    
+  }
+}
 
 console.groupEnd();
 
@@ -63,6 +70,8 @@ function areaCirculo(radio) {
 
 
 console.groupEnd();
+
+
 
 // Aqui interactuamos con el HTML
 
@@ -104,6 +113,38 @@ function calcularAreaCirculo() {
 }
 
 //Triangulo
+
+function calcularPerimetroTriangulo() {
+  const vlado1 = document.getElementById("inputTriangulo1");
+  lado1 = parseInt(vlado1.value);
+  const vlado2 = document.getElementById("inputTriangulo2");
+  lado2 = parseInt(vlado2.value);
+  const vbase = document.getElementById("inputTrianguloBase");
+  base = parseInt(vbase.value);
+  const valtura = document.getElementById("inputTrianguloAltura");
+  altura = parseInt(valtura.value);
+  const perimetro = perimetroTriangulo(lado1, lado2, base);
+  alert(perimetro);
+}
+
+function calcularAreaTriangulo() {
+  const vbase = document.getElementById("inputTrianguloBase");
+  base = vbase.value;
+  const valtura = document.getElementById("inputTrianguloAltura");
+  altura = valtura.value;
+  const area = areaTriangulo(base, altura);
+  alert(area);
+}
+
+function calcularTrianguloIsosceles() {
+  const vtri1 = document.getElementById("inputTri1");
+  tri1 = vtri1.value;
+  const vtri2 = document.getElementById("inputTri2");
+  tri2 = vtri2.value;
+  const vbase = document.getElementById("inputTriBase");
+  base = vbase.value;
+
+}
 
 
 
